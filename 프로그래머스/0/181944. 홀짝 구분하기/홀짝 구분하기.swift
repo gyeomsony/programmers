@@ -1,4 +1,9 @@
 import Foundation
 
 let a = Int(readLine()!)!
-print("\(a) is \(a % 2 == 0 ? "even" : "odd")")
+
+if a % 2 == 0 {
+    print("\(a) is even")
+} else {
+    print("\(a) is odd")
+}
