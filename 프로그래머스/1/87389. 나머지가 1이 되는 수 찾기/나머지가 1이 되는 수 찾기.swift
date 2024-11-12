@@ -1,11 +1,5 @@
 import Foundation
 
-func solution(_ n:Int) -> Int {
-    var x = 1
-   while true {
-       if  n % x == 1 {
-           return x
-       }
-       x += 1
-   }
+func solution(_ n:Int) -> Int? {
+   return (1...n).filter { n % $0 == 1}.min()
 }
