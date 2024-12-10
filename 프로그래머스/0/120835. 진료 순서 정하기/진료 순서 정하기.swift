@@ -1,9 +1,9 @@
 import Foundation
 
 func solution(_ emergency:[Int]) -> [Int] {
-    let sortedEmergency = emergency.sorted(by: >)
+    let sortedEG = emergency.sorted(by: >)
     
     return emergency.map {
-        sortedEmergency.firstIndex(of: $0)! + 1
+        sortedEG.firstIndex(of: $0)! + 1
     }
 }
