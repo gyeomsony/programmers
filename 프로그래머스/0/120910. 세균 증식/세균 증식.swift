@@ -1,5 +1,9 @@
 import Foundation
 
-func solution(_ n: Int, _ t: Int) -> Int {
-    return n * Int(pow(2.0, Double(t)))
+func solution(_ n:Int, _ t:Int) -> Int {
+    var result = n
+    for i in 1...t {
+        result *= 2
+    }
+    return result
 }
